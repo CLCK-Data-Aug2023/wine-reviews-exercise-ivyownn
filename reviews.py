@@ -18,7 +18,7 @@ average_count = reviews.groupby("country")['points'].count()
 
 result = pd.DataFrame()
 result["count"] = average_count
-result["point"] = average_points
+result["points"] = average_points
 
 
 result.to_csv('reviews-per-country.csv', index=True)
