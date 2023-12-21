@@ -9,11 +9,11 @@ reviews.points.describe()
 
 #median_points = reviews.points.unique()
 
-average_points = reviews.groupby("country").points.mean().round(1)
+average_points = reviews.groupby("country")['points'].mean().round(1)
 
 
 
-average_count = reviews.groupby("country").points.count()
+average_count = reviews.groupby("country")['points'].count()
 
 
 result = pd.DataFrame()
